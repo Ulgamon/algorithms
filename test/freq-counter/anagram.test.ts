@@ -1,4 +1,4 @@
-import { validAnagram } from "../src/freq-counter/anagram";
+import { validAnagram } from "../../src/freq-counter/anagram";
 
 describe("Test whether strings are anagrams", () => {
   it("Empty strings should match", () => {

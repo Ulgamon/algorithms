@@ -6,3 +6,11 @@ Practicing algorithms with typescript and unit tests.
 - Files inside this folder have a commented description of a problem and a solution
 - I used jest library for unit tests that test algorithms
 - Tests are located inside test folder with <problem_name>/test.ts
+
+### Installing
+
+When you install code on your machine run:
+
+> $ npm run test
+
+to run the tests.
