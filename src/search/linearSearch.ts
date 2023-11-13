@@ -1,7 +1,7 @@
 export const linearSearch = (array: Array<string>, value: string) => {
   for (let i = 0; i < array.length; i++) {
-    if (value === array[i]) return true;
+    if (value === array[i]) return i;
   }
 
-  return false;
+  return -1;
 };

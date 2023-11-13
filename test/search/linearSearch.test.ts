@@ -83,27 +83,27 @@ const names = [
 ];
 
 describe("Linear Search algorithm.", () => {
-  it("Find Xander expected: true", () => {
-    expect(linearSearch(names, "Xander")).toEqual(true);
+  it("Find Alice expected: true", () => {
+    expect(linearSearch(names, "Alice")).toEqual(0);
   });
 
-  it("Find Xander expected: true", () => {
-    expect(linearSearch(names, "Xander")).toEqual(true);
+  it("Find Bob expected: true", () => {
+    expect(linearSearch(names, "Bob")).toEqual(1);
   });
 
-  it("Find Xander expected: true", () => {
-    expect(linearSearch(names, "")).toEqual(false);
+  it("Find '' expected: true", () => {
+    expect(linearSearch(names, "")).toEqual(-1);
   });
 
-  it("Find Xander expected: true", () => {
-    expect(linearSearch(names, "Justin")).toEqual(false);
+  it("Find Justin expected: true", () => {
+    expect(linearSearch(names, "Justin")).toEqual(-1);
   });
 
-  it("Find Xander expected: true", () => {
-    expect(linearSearch(names, "Ivy")).toEqual(true);
+  it("Find David expected: true", () => {
+    expect(linearSearch(names, "David")).toEqual(3);
   });
 
-  it("Find Xander expected: true", () => {
-    expect(linearSearch(names, "Xena")).toEqual(true);
+  it("Find Elimy expected: true", () => {
+    expect(linearSearch(names, "Elimy")).toEqual(-1);
   });
 });
