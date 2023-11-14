@@ -3,15 +3,13 @@
 */
 
 export const insertionSort = (array: Array<number>) => {
-  let temp = 0;
   let currValue = 0;
   for (let i = 1; i < array.length; i++) {
     currValue = array[i];
-    for (let j = i - 1; j >= 0 && array[j] > currValue; j--) {
-        temp = array[j + 1];
-        array[j + 1] = array[j];
-        array[j] = temp;
+    for (var j = i - 1; j >= 0 && array[j] > currValue; j--) {
+      array[j + 1] = array[j];
     }
+    array[j + 1] = currValue;
   }
   return array;
 };
