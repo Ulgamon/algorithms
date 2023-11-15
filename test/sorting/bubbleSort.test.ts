@@ -12,4 +12,12 @@ describe("Bubble Sort Algorithm", () => {
       bubbleSort([18, 23, -1, -100, 0, 1000, 32, 54, 765, 123, 234, 234, 54, 6])
     ).toEqual([-100, -1, 0, 6, 18, 23, 32, 54, 54, 123, 234, 234, 765, 1000]);
   });
+
+  it("array = [] needs to be returned.", () => {
+    expect(bubbleSort([])).toEqual([]);
+  });
+
+  it("array = [1] needs to be returned.", () => {
+    expect(bubbleSort([1])).toEqual([1]);
+  });
 });

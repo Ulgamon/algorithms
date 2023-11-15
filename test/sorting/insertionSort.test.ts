@@ -15,4 +15,12 @@ describe("Insertion Sort Algorithm", () => {
       ])
     ).toEqual([-100, -1, 0, 6, 18, 23, 32, 54, 54, 123, 234, 234, 765, 1000]);
   });
+
+  it("array = [] needs to be returned.", () => {
+    expect(insertionSort([])).toEqual([]);
+  });
+
+  it("array = [1] needs to be returned.", () => {
+    expect(insertionSort([1])).toEqual([1]);
+  });
 });
