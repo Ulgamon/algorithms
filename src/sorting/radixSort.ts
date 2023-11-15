@@ -2,7 +2,7 @@ export const radixSort = (nums: Array<number>) => {
   let maxDigits = mostDigits(nums);
 
   for (let i = 0; i < maxDigits; i++) {
-    let digitBucket: Array<number[]> = Array.from({ length: 10 }, () => []);
+    let digitBucket: any[] = Array.from({ length: 10 }, () => []);
     for (let k = 0; k < nums.length; k++) {
       digitBucket[getDigit(nums[k], i)].push(nums[k]);
     }
