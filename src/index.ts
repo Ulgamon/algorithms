@@ -34,33 +34,43 @@
 // list.reverse();
 // list.traverse();
 
-import DoublyLinkedList from "./data-structures/DoublyLinkedList";
+// import DoublyLinkedList from "./data-structures/DoublyLinkedList";
 
-let dll = new DoublyLinkedList();
+// let dll = new DoublyLinkedList();
 
-console.log(dll);
+// console.log(dll);
 
-dll.push("HAHAHAHHA");
-console.log(".");
-dll.traverse();
-dll.push("TOJICA");
-console.log(".");
-dll.traverse();
-dll.push(888);
-console.log("./");
-dll.traverse();
-dll.unshift(66);
-console.log(".");
-dll.traverse();
-dll.unshift("KOLICA");
-console.log(".");
-dll.traverse();
-console.log(dll.get(4));
-console.log(dll.set(50, 4));
-dll.traverse();
-dll.insert("EEEEEEEEEEEE", 3);
-console.log(".");
-dll.traverse();
-dll.remove(3);
-console.log(".");
-dll.traverse();
+// dll.push("HAHAHAHHA");
+// console.log(".");
+// dll.traverse();
+// dll.push("TOJICA");
+// console.log(".");
+// dll.traverse();
+// dll.push(888);
+// console.log("./");
+// dll.traverse();
+// dll.unshift(66);
+// console.log(".");
+// dll.traverse();
+// dll.unshift("KOLICA");
+// console.log(".");
+// dll.traverse();
+// console.log(dll.get(4));
+// console.log(dll.set(50, 4));
+// dll.traverse();
+// dll.insert("EEEEEEEEEEEE", 3);
+// console.log(".");
+// dll.traverse();
+// dll.remove(3);
+// console.log(".");
+// dll.traverse();
+
+import Stack from "./data-structures/Stack";
+
+const stack = new Stack();
+
+console.log(stack.pop());
+console.log(stack.push("TOJA"));
+console.log(stack.push("HAHAHAAH"));
+console.log(stack.push("HIHIHDASDNsdnka"));
+console.log(stack.pop());
