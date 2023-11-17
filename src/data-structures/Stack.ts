@@ -29,13 +29,19 @@ export default class Stack {
       this.head = nodeValue;
     }
     this.length++;
-    return this;
+    return this.length;
   }
 
   pop() {
     if (this.length === 0 || this.head === null) return undefined;
-    this.head = this.head.next;
+    let value = this.head.value;
+    if (this.length === 1) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.head = this.head.next;
+    }
     this.length--;
-    return this;
+    return value;
   }
 }

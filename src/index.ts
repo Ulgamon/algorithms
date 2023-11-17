@@ -74,3 +74,20 @@ console.log(stack.push("TOJA"));
 console.log(stack.push("HAHAHAAH"));
 console.log(stack.push("HIHIHDASDNsdnka"));
 console.log(stack.pop());
+
+import Queue from "./data-structures/Queue";
+
+const queue = new Queue();
+
+console.log(queue.poll());
+console.log(queue.add("HAHAAHHA"));
+console.log(queue.add("gfdgfdssdf"));
+console.log(queue.add("&*(&*)()(*)(*"));
+console.log(queue.add("8979754564456"));
+console.log(
+  queue.poll(),
+  queue.poll(),
+  queue.poll(),
+  queue.poll(),
+  queue.poll()
+);
