@@ -108,3 +108,4 @@ console.log(bst.find(100));
 console.log(bst.bfs());
 
 console.log(bst.dfsPreOrder());
+console.log(bst.dfsPostOrder());

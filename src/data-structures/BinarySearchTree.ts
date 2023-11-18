@@ -90,15 +90,27 @@ export default class BinarySearchTree<Type> {
 
   // Depth First Search
   dfsPreOrder() {
-    if (!this.root) return [];
     let elements: Array<Type> = [];
-
-    const preOrder = (node: TreeNode<Type> | null) => {
+    function preOrder(node: TreeNode<Type> | null) {
       if (!node) return;
       elements.push(node.value);
       preOrder(node.left);
       preOrder(node.right);
-    };
+    }
+
+    preOrder(this.root);
+
+    return elements;
+  }
+
+  dfsPostOrder() {
+    let elements: Array<Type> = [];
+    function preOrder(node: TreeNode<Type> | null) {
+      if (!node) return;
+      preOrder(node.left);
+      preOrder(node.right);
+      elements.push(node.value);
+    }
 
     preOrder(this.root);
 
