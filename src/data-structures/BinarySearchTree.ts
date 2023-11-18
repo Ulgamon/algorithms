@@ -87,4 +87,21 @@ export default class BinarySearchTree<Type> {
 
     return visited;
   }
+
+  // Depth First Search
+  dfsPreOrder() {
+    if (!this.root) return [];
+    let elements: Array<Type> = [];
+
+    const preOrder = (node: TreeNode<Type> | null) => {
+      if (!node) return;
+      elements.push(node.value);
+      preOrder(node.left);
+      preOrder(node.right);
+    };
+
+    preOrder(this.root);
+
+    return elements;
+  }
 }
