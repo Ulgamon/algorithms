@@ -19,12 +19,12 @@ export default class Queue {
 
   add(value: any) {
     let node = new QueueNode(value);
-    if (!this.first) {
+    if (!this.last) {
       this.first = node;
       this.last = node;
     } else {
-      node.next = this.first;
-      this.first = node;
+      this.last.next = node;
+      this.last = node;
     }
     return ++this.size;
   }

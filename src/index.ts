@@ -96,10 +96,13 @@ import BinarySearchTree from "./data-structures/BinarySearchTree";
 
 let bst = new BinarySearchTree<number>();
 
-console.log(bst.insert(50));
-console.log(bst.insert(25));
-console.log(bst.insert(26));
-console.log(bst.insert(1));
-console.log(bst.insert(60));
+console.log(bst.insert(10));
+console.log(bst.insert(6));
+console.log(bst.insert(15));
+console.log(bst.insert(3));
+console.log(bst.insert(8));
+console.log(bst.insert(20));
 console.log(bst.find(60));
 console.log(bst.find(100));
+
+console.log(bst.bfs());

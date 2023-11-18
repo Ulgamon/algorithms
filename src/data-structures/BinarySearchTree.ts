@@ -1,3 +1,5 @@
+import Queue from "./Queue";
+
 class TreeNode<Type> {
   value: Type;
   left: TreeNode<Type> | null;
@@ -67,5 +69,22 @@ export default class BinarySearchTree<Type> {
         return current.value;
       }
     }
+  }
+
+  // Breadth First Search
+  bfs() {
+    if (!this.root) return [];
+    let queue = new Queue();
+    queue.add(this.root);
+    let visited = [];
+
+    while (queue.size) {
+      let node = queue.poll();
+      visited.push(node.value);
+      if (node.left !== null) queue.add(node.left);
+      if (node.right !== null) queue.add(node.right);
+    }
+
+    return visited;
   }
 }
