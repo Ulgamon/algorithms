@@ -65,29 +65,41 @@
 // console.log(".");
 // dll.traverse();
 
-import Stack from "./data-structures/Stack";
+// import Stack from "./data-structures/Stack";
 
-const stack = new Stack();
+// const stack = new Stack();
 
-console.log(stack.pop());
-console.log(stack.push("TOJA"));
-console.log(stack.push("HAHAHAAH"));
-console.log(stack.push("HIHIHDASDNsdnka"));
-console.log(stack.pop());
+// console.log(stack.pop());
+// console.log(stack.push("TOJA"));
+// console.log(stack.push("HAHAHAAH"));
+// console.log(stack.push("HIHIHDASDNsdnka"));
+// console.log(stack.pop());
 
-import Queue from "./data-structures/Queue";
+// import Queue from "./data-structures/Queue";
 
-const queue = new Queue();
+// const queue = new Queue();
 
-console.log(queue.poll());
-console.log(queue.add("HAHAAHHA"));
-console.log(queue.add("gfdgfdssdf"));
-console.log(queue.add("&*(&*)()(*)(*"));
-console.log(queue.add("8979754564456"));
-console.log(
-  queue.poll(),
-  queue.poll(),
-  queue.poll(),
-  queue.poll(),
-  queue.poll()
-);
+// console.log(queue.poll());
+// console.log(queue.add("HAHAAHHA"));
+// console.log(queue.add("gfdgfdssdf"));
+// console.log(queue.add("&*(&*)()(*)(*"));
+// console.log(queue.add("8979754564456"));
+// console.log(
+//   queue.poll(),
+//   queue.poll(),
+//   queue.poll(),
+//   queue.poll(),
+//   queue.poll()
+// );
+
+import BinarySearchTree from "./data-structures/BinarySearchTree";
+
+let bst = new BinarySearchTree<number>();
+
+console.log(bst.insert(50));
+console.log(bst.insert(25));
+console.log(bst.insert(26));
+console.log(bst.insert(1));
+console.log(bst.insert(60));
+console.log(bst.find(60));
+console.log(bst.find(100));
