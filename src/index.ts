@@ -109,3 +109,4 @@ console.log(bst.bfs());
 
 console.log(bst.dfsPreOrder());
 console.log(bst.dfsPostOrder());
+console.log(bst.dfsInOrder());

@@ -105,14 +105,28 @@ export default class BinarySearchTree<Type> {
 
   dfsPostOrder() {
     let elements: Array<Type> = [];
-    function preOrder(node: TreeNode<Type> | null) {
+    function postOrder(node: TreeNode<Type> | null) {
       if (!node) return;
-      preOrder(node.left);
-      preOrder(node.right);
+      postOrder(node.left);
+      postOrder(node.right);
       elements.push(node.value);
     }
 
-    preOrder(this.root);
+    postOrder(this.root);
+
+    return elements;
+  }
+
+  dfsInOrder() {
+    let elements: Array<Type> = [];
+    function inOrder(node: TreeNode<Type> | null) {
+      if (!node) return;
+      inOrder(node.left);
+      elements.push(node.value);
+      inOrder(node.right);
+    }
+
+    inOrder(this.root);
 
     return elements;
   }
