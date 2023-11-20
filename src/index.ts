@@ -2,6 +2,8 @@
 // import { validAnagram } from "./freq-counter/anagram";
 // import { mergeSort } from "./sorting/mergeSort";
 
+import PriorityQueue from "./data-structures/PriorityQueue";
+
 // console.log(validAnagram("iceman", "cineag"));
 
 // let arr = mergeSort([
@@ -111,25 +113,46 @@
 // console.log(bst.dfsPostOrder());
 // console.log(bst.dfsInOrder());
 
-import MaxBinaryHeap from "./data-structures/MaxBinaryHeap";
+// import MaxBinaryHeap from "./data-structures/MaxBinaryHeap";
 
-let bh = new MaxBinaryHeap();
+// let bh = new MaxBinaryHeap();
 
-console.log(bh.insert(10));
-console.log(bh.insert(15));
-console.log(bh.insert(1));
-console.log(bh.insert(2));
-console.log(bh.insert(3));
-console.log(bh.insert(4));
-console.log(bh.insert(5));
-console.log(bh.insert(6));
-console.log(bh.insert(7));
-console.log(bh.insert(8));
-console.log(bh.insert(9));
-console.log(bh.insert(11));
-console.log(bh.insert(100));
+// console.log(bh.insert(10));
+// console.log(bh.insert(15));
+// console.log(bh.insert(1));
+// console.log(bh.insert(2));
+// console.log(bh.insert(3));
+// console.log(bh.insert(4));
+// console.log(bh.insert(5));
+// console.log(bh.insert(6));
+// console.log(bh.insert(7));
+// console.log(bh.insert(8));
+// console.log(bh.insert(9));
+// console.log(bh.insert(11));
+// console.log(bh.insert(100));
 
-console.log(bh.extractMax());
-console.log(bh.extractMax());
-console.log(bh.extractMax());
-console.log(bh.extractMax());
+// console.log(bh.extractMax());
+// console.log(bh.extractMax());
+// console.log(bh.extractMax());
+// console.log(bh.extractMax());
+
+let bh = new PriorityQueue();
+
+console.log(bh.enqueue("Hello", 10));
+console.log(bh.enqueue("HIHI", 15));
+console.log(bh.enqueue("Justin", 1));
+console.log(bh.enqueue("Gora", 2));
+console.log(bh.enqueue("Evropa", 3));
+console.log(bh.enqueue("1247", 4));
+console.log(bh.enqueue(1000, 5));
+console.log(bh.enqueue(666, 6));
+console.log(bh.enqueue("Tripaloski", 7));
+console.log(bh.enqueue("Bolivija", 8));
+console.log(bh.enqueue("Ambis", 9));
+console.log(bh.enqueue(false, 11));
+console.log(bh.enqueue(true, 100));
+
+console.log(bh.dequeue());
+console.log(bh.dequeue());
+console.log(bh.dequeue());
+console.log(bh.dequeue());
