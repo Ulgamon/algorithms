@@ -92,21 +92,44 @@
 //   queue.poll()
 // );
 
-import BinarySearchTree from "./data-structures/BinarySearchTree";
+// import BinarySearchTree from "./data-structures/BinarySearchTree";
 
-let bst = new BinarySearchTree<number>();
+// let bst = new BinarySearchTree<number>();
 
-console.log(bst.insert(10));
-console.log(bst.insert(6));
-console.log(bst.insert(15));
-console.log(bst.insert(3));
-console.log(bst.insert(8));
-console.log(bst.insert(20));
-console.log(bst.find(60));
-console.log(bst.find(100));
+// console.log(bst.insert(10));
+// console.log(bst.insert(6));
+// console.log(bst.insert(15));
+// console.log(bst.insert(3));
+// console.log(bst.insert(8));
+// console.log(bst.insert(20));
+// console.log(bst.find(60));
+// console.log(bst.find(100));
 
-console.log(bst.bfs());
+// console.log(bst.bfs());
 
-console.log(bst.dfsPreOrder());
-console.log(bst.dfsPostOrder());
-console.log(bst.dfsInOrder());
+// console.log(bst.dfsPreOrder());
+// console.log(bst.dfsPostOrder());
+// console.log(bst.dfsInOrder());
+
+import MaxBinaryHeap from "./data-structures/MaxBinaryHeap";
+
+let bh = new MaxBinaryHeap();
+
+console.log(bh.insert(10));
+console.log(bh.insert(15));
+console.log(bh.insert(1));
+console.log(bh.insert(2));
+console.log(bh.insert(3));
+console.log(bh.insert(4));
+console.log(bh.insert(5));
+console.log(bh.insert(6));
+console.log(bh.insert(7));
+console.log(bh.insert(8));
+console.log(bh.insert(9));
+console.log(bh.insert(11));
+console.log(bh.insert(100));
+
+console.log(bh.extractMax());
+console.log(bh.extractMax());
+console.log(bh.extractMax());
+console.log(bh.extractMax());
