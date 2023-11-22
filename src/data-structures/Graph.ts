@@ -1,3 +1,5 @@
+import Queue from "./Queue";
+
 export default class Graph {
   adjacencyList: any;
   constructor() {
@@ -92,6 +94,26 @@ export default class Graph {
         visited[el] = true;
         result.push(el);
         stack.splice(stack.length, 0, ...this.adjacencyList[el]);
+      }
+    }
+    return result;
+  }
+
+  bfsIterative(start: any) {
+    const queue = new Queue();
+    queue.add(start);
+    const result: any[] = [];
+    const visited: any = {};
+
+    while (queue.size > 0) {
+      const node = queue.poll();
+      if (!visited[node]) {
+        result.push(node);
+        visited[node] = true;
+        const adjList = this.adjacencyList[node];
+        for (let i = 0; i < adjList.length; i++) {
+          queue.add(adjList[i]);
+        }
       }
     }
     return result;

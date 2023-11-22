@@ -196,3 +196,5 @@ console.log(graph);
 
 console.log(graph.dfsRecursive("A"));
 console.log(graph.dfsIterative("A"));
+
+console.log(graph.bfsIterative("A"));
