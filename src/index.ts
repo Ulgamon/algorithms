@@ -136,23 +136,39 @@ import PriorityQueue from "./data-structures/PriorityQueue";
 // console.log(bh.extractMax());
 // console.log(bh.extractMax());
 
-let bh = new PriorityQueue();
+// let bh = new PriorityQueue();
 
-console.log(bh.enqueue("Hello", 10));
-console.log(bh.enqueue("HIHI", 15));
-console.log(bh.enqueue("Justin", 1));
-console.log(bh.enqueue("Gora", 2));
-console.log(bh.enqueue("Evropa", 3));
-console.log(bh.enqueue("1247", 4));
-console.log(bh.enqueue(1000, 5));
-console.log(bh.enqueue(666, 6));
-console.log(bh.enqueue("Tripaloski", 7));
-console.log(bh.enqueue("Bolivija", 8));
-console.log(bh.enqueue("Ambis", 9));
-console.log(bh.enqueue(false, 11));
-console.log(bh.enqueue(true, 100));
+// console.log(bh.enqueue("Hello", 10));
+// console.log(bh.enqueue("HIHI", 15));
+// console.log(bh.enqueue("Justin", 1));
+// console.log(bh.enqueue("Gora", 2));
+// console.log(bh.enqueue("Evropa", 3));
+// console.log(bh.enqueue("1247", 4));
+// console.log(bh.enqueue(1000, 5));
+// console.log(bh.enqueue(666, 6));
+// console.log(bh.enqueue("Tripaloski", 7));
+// console.log(bh.enqueue("Bolivija", 8));
+// console.log(bh.enqueue("Ambis", 9));
+// console.log(bh.enqueue(false, 11));
+// console.log(bh.enqueue(true, 100));
 
-console.log(bh.dequeue());
-console.log(bh.dequeue());
-console.log(bh.dequeue());
-console.log(bh.dequeue());
+// console.log(bh.dequeue());
+// console.log(bh.dequeue());
+// console.log(bh.dequeue());
+// console.log(bh.dequeue());
+
+import HashTable from "./data-structures/HashTable";
+
+let ht = new HashTable();
+
+ht.set("Hello", "dogs");
+ht.set("dogs", "are cool");
+ht.set("i hate", "cats");
+ht.set("not really", "just dont like them");
+ht.set("I love", "pizza");
+
+console.log(ht.keyMap);
+
+console.log(ht.get("I love"));
+console.log(ht.values());
+console.log(ht.keys());
