@@ -157,18 +157,42 @@ import PriorityQueue from "./data-structures/PriorityQueue";
 // console.log(bh.dequeue());
 // console.log(bh.dequeue());
 
-import HashTable from "./data-structures/HashTable";
+// import HashTable from "./data-structures/HashTable";
 
-let ht = new HashTable();
+// let ht = new HashTable();
 
-ht.set("Hello", "dogs");
-ht.set("dogs", "are cool");
-ht.set("i hate", "cats");
-ht.set("not really", "just dont like them");
-ht.set("I love", "pizza");
+// ht.set("Hello", "dogs");
+// ht.set("dogs", "are cool");
+// ht.set("i hate", "cats");
+// ht.set("not really", "just dont like them");
+// ht.set("I love", "pizza");
 
-console.log(ht.keyMap);
+// console.log(ht.keyMap);
 
-console.log(ht.get("I love"));
-console.log(ht.values());
-console.log(ht.keys());
+// console.log(ht.get("I love"));
+// console.log(ht.values());
+// console.log(ht.keys());
+
+import Graph from "./data-structures/Graph";
+
+const graph = new Graph();
+
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+graph.addVertex("F");
+
+console.log(graph.addEdge("A", "B"));
+console.log(graph.addEdge("A", "C"));
+console.log(graph.addEdge("B", "D"));
+console.log(graph.addEdge("C", "E"));
+console.log(graph.addEdge("D", "E"));
+console.log(graph.addEdge("D", "F"));
+console.log(graph.addEdge("E", "F"));
+
+console.log(graph);
+
+console.log(graph.dfsRecursive("A"));
+console.log(graph.dfsIterative("A"));
