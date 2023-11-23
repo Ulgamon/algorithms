@@ -173,9 +173,8 @@ import PriorityQueue from "./data-structures/PriorityQueue";
 // console.log(ht.values());
 // console.log(ht.keys());
 
-import Graph from "./data-structures/Graph";
-
-const graph = new Graph();
+import WeightedGraph from "./data-structures/WeightedGraph";
+const graph = new WeightedGraph();
 
 graph.addVertex("A");
 graph.addVertex("B");
@@ -184,17 +183,17 @@ graph.addVertex("D");
 graph.addVertex("E");
 graph.addVertex("F");
 
-console.log(graph.addEdge("A", "B"));
-console.log(graph.addEdge("A", "C"));
-console.log(graph.addEdge("B", "D"));
-console.log(graph.addEdge("C", "E"));
-console.log(graph.addEdge("D", "E"));
-console.log(graph.addEdge("D", "F"));
-console.log(graph.addEdge("E", "F"));
+console.log(graph.addEdge("A", "B", 10));
+console.log(graph.addEdge("A", "C", 20));
+console.log(graph.addEdge("B", "D", 22));
+console.log(graph.addEdge("C", "E", 98));
+console.log(graph.addEdge("D", "E", 32));
+console.log(graph.addEdge("D", "F", 21));
+console.log(graph.addEdge("E", "F", 18));
 
 console.log(graph);
 
-console.log(graph.dfsRecursive("A"));
-console.log(graph.dfsIterative("A"));
+// console.log(graph.dfsRecursive("A"));
+// console.log(graph.dfsIterative("A"));
 
-console.log(graph.bfsIterative("A"));
+// console.log(graph.bfsIterative("A"));
