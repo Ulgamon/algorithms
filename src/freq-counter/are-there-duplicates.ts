@@ -4,8 +4,8 @@
 
 // Restrictions: Time Complexity - O(n), Space Complexity - O(n)
 
-function areThereDuplicates(...args: any) {
-  if (args.length === 0) return;
+export default function areThereDuplicates(...args: any) {
+  if (args.length === 0) return false;
 
   let dict: any = {};
 
